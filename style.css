@@ -6,6 +6,7 @@
 }
 
 body {
+  font-size: 10px;
   height : 100vh;
   color : black;
   font-family : 'Poppins', sans-serif;
@@ -22,7 +23,7 @@ body {
   left : 50%;
   transform: translateX(-50%);
   top: 24vh;
-  font-size: 84px;
+  font-size: 8.5em;
 }
 
 .img-circle {
@@ -36,7 +37,7 @@ body {
 
 .profile-white {
   /* border : 1px solid grey; */
-  margin: 8vh auto 12px auto;
+  margin: 8vh auto 0 auto;
   padding: 12px;
   text-align: center;
   border-radius : 4px;
@@ -45,21 +46,29 @@ body {
 }
 
 .card-white {
-  margin: 36px auto 12px auto;
+  margin: 12px auto 24px auto;
   padding: 12px;
   text-align: justify;
   border-radius : 4px;
   width : 65vw;
   color : rgba(30, 1, 31, 0.897);
-  font-size : 14px;
+  font-size : 1.8em;
+  line-height: 1.8em;
   height : 25vh;
   /* border: solid 1px; */
   vertical-align: middle;
 }
 
-h1, h3 {
+h1 {
   margin : 0 4px;
   padding : 0 8px;
+  font-size: 3.5em;
+}
+
+h3 {
+  margin : 0 4px;
+  padding : 0 8px;
+  font-size: 2.5em;
 }
 
 h3 {
@@ -72,7 +81,7 @@ h3 {
   padding : 4px 12px;
   background-color: rgba(255, 255, 255, 0.534);
   color : rgb(48, 1, 49);
-  font-size: 14px;
+  font-size: 1.5em;
   text-decoration: none;
 }
 
@@ -81,9 +90,13 @@ h3 {
   color:rgba(255, 255, 255);
 }
 
+.button a:visited {
+  background-color: rgba(86, 3, 88, 0.7);
+}
+
 .button {
   text-align: center;
-  margin : 12px auto;
+  margin : 32px auto 32px auto;
   transition : 0.2s;
   width: 120px;
 }
@@ -104,14 +117,19 @@ h3 {
   padding : 0 16px;
   color :rgb(86, 3, 88);
   transition : 0.2s;
-  font-size: 22px;
+  font-size: 2.5em;
 }
 
 .list-social li:hover {
   transform: scale(1.2);
+  color :rgb(159, 1, 161);
 }
 
-@media (max-width: 657px) {
+.list-social li:visited {
+  color :rgb(86, 3, 88);
+}
+
+@media (max-width: 965px) {
   /* For a screen < 540px, this CSS will be read */
   p {
     overflow: scroll;
