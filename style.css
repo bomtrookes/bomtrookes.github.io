@@ -1,9 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Space+Mono&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
+body {
+  font-size: 10px;
+  height : 100vh;
+  color : black;
+  font-family : 'Poppins', sans-serif;
+  background: url("https://images.unsplash.com/photo-1565300667498-2843c56b4603?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2860&q=80") no-repeat center;
+  background-size: cover;
+  min-width: 340px;
+  /* overflow : hidden; */
+}
+
+.subtitle {
+  z-index: -1;
+  color :rgba(86, 3, 88, 0.1);
+  position : absolute;
+  left : 50%;
+  transform: translateX(-50%);
+  top: 24vh;
+  font-size: 8.5em;
+}
+
 .img-circle {
-  height : 20vh;
-  border-radius: 50%;
+  height : 120px;
+  width: 120px;
+  border : 3px solid rgba(138, 129, 139, 0.2);
+  border-radius:60px;
+  margin : 0 auto;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profile-white {
+  /* border : 1px solid grey; */
+  margin: 8vh auto 0 auto;
+  padding: 12px;
+  text-align: center;
+  border-radius : 4px;
+  width : 80vw;
+  height : 30vh;
+}
+
+.card-white {
+  margin: 12px auto 24px auto;
+  padding: 12px;
+  text-align: justify;
+  border-radius : 4px;
+  width : 65vw;
+  color : rgba(30, 1, 31, 0.897);
+  font-size : 1.8em;
+  line-height: 1.8em;
+  height : 25vh;
+  /* border: solid 1px; */
+  vertical-align: middle;
+}
+
+h1 {
+  margin : 0 4px;
+  padding : 0 8px;
+  font-size: 3.5em;
+}
+
+h3 {
+  margin : 0 4px;
+  padding : 0 8px;
+  font-size: 2.5em;
+}
+
+h3 {
+  color :rgba(86, 3, 88, 0.7);
+}
+
+.button > a {
+  border : 1px solid rgb(48, 1, 49);
+  border-radius: 4px;
+  padding : 4px 12px;
+  background-color: rgba(255, 255, 255, 0.534);
+  color : rgb(48, 1, 49);
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.button a:hover {
+  background-color: rgba(86, 3, 88, 0.7);
+  color:rgba(255, 255, 255);
+}
+
+.button a:visited {
+  background-color: rgba(86, 3, 88, 0.7);
+}
+
+.button {
+  text-align: center;
+  margin : 32px auto 32px auto;
+  transition : 0.2s;
+  width: 120px;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.list-social {
+  list-style: none;
+  text-align: center;
+  padding: 0 8px;
+  margin : 42px 12px 0 12px;
+}
+
+.list-social li {
+  display : inline-block;
+  padding : 0 16px;
+  color :rgb(86, 3, 88);
+  transition : 0.2s;
+  font-size: 2.5em;
+}
+
+.list-social li:hover {
+  transform: scale(1.2);
+  color :rgb(159, 1, 161);
+}
+
+.list-social li:visited {
+  color :rgb(86, 3, 88);
+}
+
+@media (max-width: 965px) {
+  /* For a screen < 540px, this CSS will be read */
+  p {
+    overflow: scroll;
+    height : 20vh;
+  }
+  .card-white {
+    width : 80vw;
+  }
+}
+
+@media (max-width: 313px), (max-height: 490px) {
+  p {
+    display : none;
+  }
+  .profile-white {
+    margin-top: 5vh;
+    height : 20vh;
+  }
+  .subtitle {
+    margin-top: 20vh;
+  }
+  .button {
+    display: none;
+  }
 }
