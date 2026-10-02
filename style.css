@@ -154,6 +154,19 @@ section > p.lead {
   margin: 0 0 6px;
 }
 
+.work h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.work-link {
+  display: inline-flex;
+  color: var(--muted);
+  transition: color 0.15s ease;
+}
+.work-link:hover { color: var(--accent); }
+
 .work p,
 .project p {
   margin: 0 0 8px;
