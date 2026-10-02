@@ -92,10 +92,6 @@ section > p.lead {
 .entry:last-child { margin-bottom: 0; }
 
 .entry-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
   gap: 4px 16px;
   margin-bottom: 4px;
 }
@@ -116,6 +112,7 @@ section > p.lead {
   color: var(--muted);
   font-size: 0.95rem;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .entry ul {
