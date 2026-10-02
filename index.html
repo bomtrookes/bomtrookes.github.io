@@ -1,290 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tom Brookes — Web Developer</title>
-<meta name="description" content="Tom Brookes. Web developer. Solutions and implementation.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #faf9f6;
-    --ink: #1b1e24;
-    --muted: #5b6270;
-    --accent: #2f6f5e;
-    --line: #ddd9cd;
-    --serif: 'Fraunces', serif;
-    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  }
-
-  * { box-sizing: border-box; }
-
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-size: 17px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-  a:hover { text-decoration-thickness: 2px; }
-
-  .wrap {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-
-  header.hero {
-    padding: 96px 0 72px;
-  }
-
-  .hero h1 {
-    font-family: var(--serif);
-    font-weight: 500;
-    font-size: clamp(2.6rem, 6vw, 3.6rem);
-    line-height: 1.08;
-    margin: 0 0 8px;
-    letter-spacing: -0.01em;
-  }
-
-  .hero .role {
-    font-size: 1.05rem;
-    color: var(--muted);
-    margin: 0 0 28px;
-  }
-
-  .hero p.statement {
-    font-family: var(--serif);
-    font-style: italic;
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    max-width: 30ch;
-    color: var(--ink);
-    margin: 0;
-  }
-
-  nav.contact-row {
-    margin-top: 32px;
-    font-size: 0.95rem;
-    color: var(--muted);
-  }
-
-  nav.contact-row a { color: var(--ink); margin-right: 20px; }
-
-  section {
-    padding: 48px 0;
-    border-top: 1px solid var(--line);
-  }
-
-  section h2 {
-    font-family: var(--serif);
-    font-weight: 500;
-    font-size: 1.5rem;
-    margin: 0 0 24px;
-  }
-
-  section > p.lead {
-    max-width: 58ch;
-    color: var(--ink);
-  }
-
-  .entry {
-    margin-bottom: 32px;
-  }
-  .entry:last-child { margin-bottom: 0; }
-
-  .entry-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 4px 16px;
-    margin-bottom: 4px;
-  }
-
-  .entry-head h3 {
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin: 0;
-  }
-
-  .entry-head .dates {
-    font-size: 0.9rem;
-    color: var(--muted);
-    white-space: nowrap;
-  }
-
-  .entry .org {
-    color: var(--muted);
-    font-size: 0.95rem;
-    margin-bottom: 10px;
-  }
-
-  .entry ul {
-    margin: 0;
-    padding-left: 20px;
-  }
-  .entry li { margin-bottom: 6px; }
-
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .skills span {
-    border: 1px solid var(--line);
-    border-radius: 3px;
-    padding: 6px 12px;
-    font-size: 0.9rem;
-    color: var(--ink);
-  }
-
-  .project {
-    margin-bottom: 28px;
-    padding-bottom: 28px;
-    border-bottom: 1px solid var(--line);
-  }
-  .project:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-
-  .project h3 {
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin: 0 0 6px;
-  }
-
-  .project p {
-    margin: 0 0 8px;
-    color: var(--ink);
-  }
-
-  .project .meta {
-    font-size: 0.88rem;
-    color: var(--muted);
-  }
-
-  .placeholder {
-    background: #fff7e6;
-    border: 1px dashed #d9b36a;
-    color: #7a5a1e;
-    font-size: 0.82rem;
-    padding: 2px 8px;
-    border-radius: 3px;
-  }
-
-  footer {
-    padding: 48px 0 80px;
-    color: var(--muted);
-    font-size: 0.9rem;
-  }
-
-  @media (max-width: 520px) {
-    header.hero { padding: 64px 0 48px; }
-    .entry-head { flex-direction: column; }
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Brookes — Web Developer</title>
+    <meta name="description" content="Tom Brookes. Web Developer. Solutions and Implementation.">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="wrap">
+        <header class="hero">
+            <h1>Tom Brookes</h1>
+            <p class="role">Web Developer. Solutions &amp; Implementation.</p>
+            <p class="statement">I take designs, specs and half-built ideas and turn them into things that work, carefully.</p>
+            <nav class="contact-row">
+                <a href="mailto:tom.brookes15@gmail.com">tom.brookes15@gmail.com</a>
+                <a href="https://www.linkedin.com/in/thomasbrookes/">linkedin.com/in/thomasbrookes</a>
+            </nav>
+        </header>
 
-<div class="wrap">
+        <section id="about">
+            <h2>About</h2>
+            <p class="lead">
+                I spent three years as a solutions and implementation specialist at NAVEX,
+                turning client designs and requirements into live, working web platforms.
+                Before that, I taught myself to code during a cinema management furlough,
+                then trained properly through the Le Wagon bootcamp while working full
+                time. I like problems with a clear before and after: an idea, a mockup,
+                a mess of requirements, and then a working thing on the other side of it.
+            </p>
+        </section>
 
-  <header class="hero">
-    <h1>Tom Brookes</h1>
-    <p class="role">Web Developer. Solutions &amp; Implementation.</p>
-    <p class="statement">I take designs, specs and half-built ideas and turn them into things that work, carefully.</p>
-    <nav class="contact-row">
-      <a href="mailto:tom.brookes15@gmail.com">tom.brookes15@gmail.com</a>
-      <a href="https://www.linkedin.com/in/thomasbrookes/">linkedin.com/in/thomasbrookes</a>
-    </nav>
-  </header>
+        <section id="experience">
+            <h2>Experience</h2>
 
-  <section id="about">
-    <h2>About</h2>
-    <p class="lead">
-      I spent three years as a solutions and implementation specialist at NAVEX,
-      turning client designs and requirements into live, working web platforms.
-      Before that, I taught myself to code during a cinema management furlough,
-      then trained properly through the Le Wagon bootcamp while working full
-      time. I like problems with a clear before and after: an idea, a mockup,
-      a mess of requirements, and then a working thing on the other side of it.
-    </p>
-  </section>
+            <div class="entry">
+                <div class="entry-head">
+                    <h3>Senior Customer Interface Specialist, Implementation</h3>
+                    <span class="dates">2023 — 2026</span>
+                </div>
+                <div class="org">NAVEX, governance risk &amp; compliance software</div>
+                    <ul>
+                        <li>Configured and implemented client-facing web platforms from design specs and branding materials, including full site builds, location databases and call-routing setups, managed through a live Salesforce case queue.</li>
+                        <li>Diagnosed and resolved live production issues on customer-facing sites by investigating root causes and delivering written fix reports.</li>
+                        <li>Built version-controlled automation tools via GitHub to streamline recurring tasks, and trained incoming international team members on systems and workflows.</li>
+                    </ul>
+            </div>
 
-  <section id="experience">
-    <h2>Experience</h2>
+            <div class="entry">
+                <div class="entry-head">
+                    <h3>Teaching Assistant, Full Stack Web Development</h3>
+                    <span class="dates">2022 — 2023</span>
+            </div>
 
-    <div class="entry">
-      <div class="entry-head">
-        <h3>Senior Customer Interface Specialist, Implementation</h3>
-        <span class="dates">2023 — 2026</span>
-      </div>
-      <div class="org">NAVEX, governance risk &amp; compliance software</div>
-      <ul>
-        <li>Configured and implemented client-facing web platforms from design specs and branding materials, including full site builds, location databases and call-routing setups, managed through a live Salesforce case queue.</li>
-        <li>Diagnosed and resolved live production issues on customer-facing sites by investigating root causes and delivering written fix reports.</li>
-        <li>Built version-controlled automation tools via GitHub to streamline recurring tasks, and trained incoming international team members on systems and workflows.</li>
-      </ul>
+            <div class="org">Le Wagon, London</div>
+                <ul>
+                    <li>Supported students through fundamentals including databases, front-end development and web design, working with students and teachers from multiple countries.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Ruby on Rails</span>
+                <span>SQL</span>
+                <span>Salesforce</span>
+                <span>Git &amp; GitHub</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Web Intake Site Assistant Tool</h3>
+                <p></p>
+                <span class="meta">TamperMonkey</span>
+                <div class="screenshot tm-index"></div>
+                <div class="screenshot tm-issues"></div>
+                <div class="screenshot tm-params"></div>
+            </div>
+
+            <div class="project">
+                <h3>Screen Pop Alert</h3>
+                <p></p>
+                <span class="meta">TamperMonkey</span>
+                <div class="screenshot tm-greeting"></div>
+            </div>
+        </section>
+
+        <section id="recent-work">
+            <h2>Recent Work</h2>
+
+            <div class="work">
+                <h3>Monster Energy</h3>
+                <a href="https://secure.ethicspoint.com/domain/media/en/gui/1003482/index.html"></a>
+                <p></p>
+                <!-- <span class="meta">WordPress</span> -->
+                <div class="screenshot monster"></div>
+            </div>
+
+            <div class="work">
+                <h3>Pokemon</h3>
+                <a href="https://secure.ethicspoint.com/domain/media/en/gui/68422/index.html"></a>
+                <p></p>
+                <!-- <span class="meta">Ruby on Rails, JavaScript ES6, SQL</span> -->
+                <div class="screenshot pokemon"></div>
+            </div>
+
+            <div class="work">
+                <h3>Weir</h3>
+                <a href="https://secure.ethicspoint.eu/domain/media/en/gui/102664/index.html"></a>
+                <p></p>
+                <!-- <span class="meta">Ruby on Rails, JavaScript ES6, SQL</span> -->
+                <div class="screenshot weir"></div>
+            </div>
+
+            <div class="work">
+                <h3>Just Eat Takeaway.com</h3>
+                <a href="https://secure.ethicspoint.eu/domain/media/en/gui/114437/index.html"></a>
+                <p></p>
+                <!-- <span class="meta">Ruby on Rails, JavaScript ES6, SQL</span> -->
+                <div class="screenshot jet"></div>
+            </div>
+        </section>
+
+        <footer>
+            Based in London. <a href="mailto:tom.brookes15@gmail.com">tom.brookes15@gmail.com</a>
+        </footer>
     </div>
-
-    <div class="entry">
-      <div class="entry-head">
-        <h3>Teaching Assistant, Full Stack Web Development</h3>
-        <span class="dates">2022 — 2023</span>
-      </div>
-      <div class="org">Le Wagon, London</div>
-      <ul>
-        <li>Supported students through fundamentals including databases, front-end development and web design, working with students and teachers from multiple countries.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Ruby on Rails</span>
-      <span>SQL</span>
-      <span>Salesforce</span>
-      <span>Git &amp; GitHub</span>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>Jewellery client website <span class="placeholder">add link</span></h3>
-      <p>A WordPress site built for a small jewellery business, used as a way to build hands-on WordPress experience outside of a Rails/JS stack.</p>
-      <span class="meta">WordPress</span>
-    </div>
-
-    <div class="project">
-      <h3>List-It <span class="placeholder">add link / screenshot</span></h3>
-      <p>A Rails-based social app prototype, designed, built and shipped to production as part of the Le Wagon bootcamp.</p>
-      <span class="meta">Ruby on Rails, JavaScript ES6, SQL</span>
-    </div>
-
-    <div class="project">
-      <h3>Airbnb clone <span class="placeholder">add link / screenshot</span></h3>
-      <p>A full clone of Airbnb's core booking flow, built and shipped to production during the bootcamp.</p>
-      <span class="meta">Ruby on Rails, JavaScript ES6, SQL</span>
-    </div>
-  </section>
-
-  <footer>
-    Based in London. <a href="mailto:tom.brookes15@gmail.com">tom.brookes15@gmail.com</a>
-  </footer>
-
-</div>
-
 </body>
+
 </html>
