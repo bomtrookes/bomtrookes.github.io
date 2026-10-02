@@ -175,15 +175,16 @@ section > p.lead {
 }
 
 .screenshot.tm-index {
-  background: url('/images/tm_index.png') no-repeat top center / cover;
+  background: url('/images/tm_index.png') no-repeat center / contain;
+  height: 200px;
 }
 
 .screenshot.tm-issues {
-  background: url('/images/tm_issues.png') no-repeat top center / cover;
+  background: url('/images/tm_issues.png') no-repeat top left / cover;
 }
 
 .screenshot.tm-params {
-  background: url('/images/tm_params.png') no-repeat top center / cover;
+  background: url('/images/tm_params.png') no-repeat top left / cover;
 }
 
 .screenshot.tm-greeting {
