@@ -10,19 +10,23 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <div class="wrap">
         <header class="hero">
             <h1>Tom Brookes</h1>
             <p class="role">Web Developer. Solutions &amp; Implementation.</p>
             <p class="statement">I take designs, specs and half-built ideas and turn them into things that work, carefully.</p>
-            <nav class="contact-row">
+            <nav class="contact-row" aria-label="Contact">
                 <a href="mailto:tom.brookes15@gmail.com">tom.brookes15@gmail.com</a>
-                <a href="https://www.linkedin.com/in/thomasbrookes/">linkedin.com/in/thomasbrookes</a>
+                <a href="https://www.linkedin.com/in/thomasbrookes/" target="_blank" rel="noopener noreferrer">linkedin.com/in/thomasbrookes<span class="visually-hidden"> (opens in new tab)</span></a>
+                <a href="https://github.com/bomtrookes" target="_blank" rel="noopener noreferrer">github.com/bomtrookes<span class="visually-hidden"> (opens in new tab)</span></a>
             </nav>
         </header>
 
-        <section id="about">
-            <h2>About</h2>
+        <main id="main-content" tabindex="-1">
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About</h2>
             <p class="lead">
                 I spent three years as a Customer Interface Specialist at NAVEX,
                 turning client designs and requirements into live, working web platforms.
@@ -33,8 +37,8 @@
             </p>
         </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
+        <section id="experience" aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Experience</h2>
 
             <div class="entry">
                 <div class="entry-head">
@@ -64,88 +68,80 @@
             </div>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Ruby on Rails</span>
-                <span>SQL</span>
-                <span>Salesforce</span>
-                <span>Git &amp; GitHub</span>
-            </div>
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+              <ul>
+                <li><strong>Front end:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+                <li><strong>Accessibility:</strong> WCAG, semantic HTML, WAVE, Lighthouse, keyboard and screen reader testing</li>
+                <li><strong>Back end and data:</strong> Ruby on Rails, SQL, PostgreSQL</li>
+                <li><strong>Tools:</strong> Git, GitHub, Salesforce, Tampermonkey</li>
+                <li><strong>Currently learning:</strong> PHP, MySQL</li>
+              </ul>
         </section>
 
-        <section id="recent-work">
-            <h2>Recent Work</h2>
+        <section id="recent-work" aria-labelledby="recent-work-heading">
+            <h2 id="recent-work-heading">Recent Work</h2>
+            <p>These are intake sites I built and maintained at NAVEX. They are live customer sites, so I can't share the code, and some pages may have changed since I worked on them.</p>
 
             <div class="work">
                 <h3>Monster Energy
-                    <a class="work-link" href="https://secure.ethicspoint.com/domain/media/en/gui/1003482/index.html" target="_blank" rel="noopener" aria-label="Visit Monster Energy site">
+                    <a class="work-link" href="https://secure.ethicspoint.com/domain/media/en/gui/1003482/index.html" target="_blank" rel="noopener noreferrer" aria-label="Visit Monster Energy site (opens in new tab)">
                         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
                     </a>
                 </h3>
-                <p></p>
                 <!-- <span class="meta">WordPress</span> -->
-                <div class="screenshot monster"></div>
+                <div class="screenshot monster" role="img" aria-label="Screenshot of the Monster Energy site"></div>
             </div>
 
             <div class="work">
                 <h3>Pokemon
-                    <a class="work-link" href="https://secure.ethicspoint.com/domain/media/en/gui/68422/index.html" target="_blank" rel="noopener" aria-label="Visit Pokemon site">
+                    <a class="work-link" href="https://secure.ethicspoint.com/domain/media/en/gui/68422/index.html" target="_blank" rel="noopener noreferrer" aria-label="Visit Pokemon site (opens in new tab)">
                         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
                     </a>
                 </h3>
-                <p></p>
                 <!-- <span class="meta">Ruby on Rails, JavaScript ES6, SQL</span> -->
-                <div class="screenshot pokemon"></div>
+                <div class="screenshot pokemon" role="img" aria-label="Screenshot of the Pokemon site"></div>
             </div>
 
             <div class="work">
                 <h3>Weir
-                    <a class="work-link" href="https://secure.ethicspoint.eu/domain/media/en/gui/102664/index.html" target="_blank" rel="noopener" aria-label="Visit Weir site">
+                    <a class="work-link" href="https://secure.ethicspoint.eu/domain/media/en/gui/102664/index.html" target="_blank" rel="noopener noreferrer" aria-label="Visit Weir site (opens in new tab)">
                         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
                     </a>
                 </h3>
-                <p></p>
                 <!-- <span class="meta">Ruby on Rails, JavaScript ES6, SQL</span> -->
-                <div class="screenshot weir"></div>
+                <div class="screenshot weir" role="img" aria-label="Screenshot of the Weir site"></div>
             </div>
 
             <div class="work">
                 <h3>Just Eat Takeaway.com
-                    <a class="work-link" href="https://secure.ethicspoint.eu/domain/media/en/gui/114437/index.html" target="_blank" rel="noopener" aria-label="Visit Just Eat Takeaway.com site">
+                    <a class="work-link" href="https://secure.ethicspoint.eu/domain/media/en/gui/114437/index.html" target="_blank" rel="noopener noreferrer" aria-label="Visit Just Eat Takeaway.com site (opens in new tab)">
                         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
                     </a>
                 </h3>
-                <p></p>
                 <!-- <span class="meta">Ruby on Rails, JavaScript ES6, SQL</span> -->
-                <div class="screenshot jet"></div>
+                <div class="screenshot jet" role="img" aria-label="Screenshot of the Just Eat Takeaway.com site"></div>
             </div>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
 
             <div class="project">
                 <h3>Web Intake Site Assistant Tool</h3>
-                <p></p>
+                <p>A browser tool I built at NAVEX to speed up everyday maintenance work on customer intake sites. It displays the customer's data from their JavaScript file, and pulls text and issue types (Violation Packages) from a site at the click of a button, which saved repetitive work. The panel can be dragged anywhere on the page and minimised, and it remembers its state between sites. I maintained it on GitHub, presented it to my team, and it was rolled out across the team.</p>
+                <p>JavaScript, Tampermonkey, GitHub</p>
                 <span class="meta">TamperMonkey</span>
                 <!-- <div class="screenshot tm-index"></div> -->
-                <div class="screenshot tm-issues"></div>
-                <div class="screenshot tm-params"></div>
+                <div class="screenshot tm-issues" role="img" aria-label="Screenshot of the Web Intake Site Assistant Tool showing detected site issues"></div>
+                <div class="screenshot tm-params" role="img" aria-label="Screenshot of the Web Intake Site Assistant Tool showing site parameters"></div>
             </div>
 
-            <!-- <div class="project">
-                <h3>Screen Pop Alert</h3>
-                <p></p>
-                <span class="meta">TamperMonkey</span>
-                <div class="screenshot tm-greeting"></div>
-            </div> -->
+            <p>I'm updating this site and adding more of my previous projects as I go. In the meantime, more of my code can be found on <a href="https://github.com/bomtrookes">GitHub</a>.</p>
         </section>
+        </main>
 
-        <footer>
+        <footer aria-label="Site footer">
             Based in London. <a href="mailto:tom.brookes15@gmail.com">tom.brookes15@gmail.com</a>
         </footer>
     </div>
