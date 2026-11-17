@@ -220,6 +220,11 @@ section > p.lead {
   background: url('/images/img_jet.png') no-repeat top center / cover;
 }
 
+.screenshot.reelscore {
+  background: url('/images/img_reelscore.jpg') no-repeat top center / cover;
+  margin-bottom: 16px;
+}
+
 .placeholder {
   background: #fff7e6;
   border: 1px dashed #d9b36a;
