@@ -33,8 +33,6 @@
     prev.disabled = index === 0;
     next.disabled = index === slides.length - 1;
     dots.forEach(function (d, i) { d.setAttribute('aria-current', i === index ? 'true' : 'false'); });
-    var id = slides[index].id;
-    if (id && location.hash !== '#' + id) history.replaceState(null, '', '#' + id);
   }
 
   prev.addEventListener('click', function () { goTo(index - 1); });
@@ -72,6 +70,11 @@
       slides[0].addEventListener('animationend', function () { track.classList.remove('nudge'); }, { once: true });
     }, 700);
   }
+
+  window.addEventListener('load', function () {
+    var a = document.activeElement;
+    if (a && a.classList && a.classList.contains('slide')) a.blur();
+  });
 
   window.addEventListener('resize', function () { track.scrollLeft = slides[index].offsetLeft; });
   update();
