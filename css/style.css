@@ -336,6 +336,12 @@ h1, h2 { font-family: var(--display); font-weight: 600; letter-spacing: -.03em; 
   color: var(--muted);
   font-size: .9rem;
 }
+.slide-media.wide {
+  background-color: #1e293a;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .slide-media.placeholder {
   background: repeating-linear-gradient(135deg, var(--stripe-a) 0 12px, var(--stripe-b) 12px 24px);
 }
