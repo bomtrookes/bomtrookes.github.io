@@ -429,8 +429,13 @@ h1, h2 { font-family: var(--display); font-weight: 600; letter-spacing: -.03em; 
   background: var(--paper);
   color: var(--ink);
   font-size: 1.1rem;
+  line-height: 1;
+  padding: 0;
+  display: grid;
+  place-items: center;
   cursor: pointer;
 }
+.arrows button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .arrows button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
 .arrows button:disabled { opacity: .35; cursor: default; }
 
